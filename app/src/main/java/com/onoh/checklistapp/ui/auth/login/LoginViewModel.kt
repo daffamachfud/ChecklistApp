@@ -5,12 +5,10 @@ import com.onoh.checklistapp.data.remote.UserRepository
 import com.onoh.checklistapp.ui.auth.AuthListener
 
 class LoginViewModel : ViewModel() {
-    var username:String? = null
-    var password:String? = null
 
-    val authListener :AuthListener? = null
+    private val authListener :AuthListener? = null
 
-    fun onLogin(){
+    fun onLogin(username:String,password:String){
         authListener?.onStarted()
         if(username.isNullOrEmpty()||password.isNullOrEmpty()){
             authListener?.onFailure("Username atau password salah")

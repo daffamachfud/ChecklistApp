@@ -9,6 +9,7 @@ import com.onoh.checklistapp.R
 import com.onoh.checklistapp.data.local.UserPreference
 import com.onoh.checklistapp.ui.MainActivity
 import com.onoh.checklistapp.ui.auth.AuthListener
+import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity(),AuthListener{
 
@@ -18,6 +19,13 @@ class LoginActivity : AppCompatActivity(),AuthListener{
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
         val viewModel = ViewModelProvider(this, ViewModelProvider.NewInstanceFactory())[LoginViewModel::class.java]
+
+        val username = et_login_username.text.toString()
+        val password = et_login_password.text.toString()
+
+        btn_login_submit.setOnClickListener{
+            viewModel.onLogin(username,password)
+        }
     }
 
     override fun onStarted() {
