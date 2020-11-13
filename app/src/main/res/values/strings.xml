@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ChecklistApp</string>
+    <string name="masuk">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="belum_punya_akun">Belum punya akun?</string>
+    <string name="daftar_disini">Daftar disini</string>
+    <string name="daftar">Daftar Disini</string>
+    <string name="email">Email</string>
+    <string name="sudah_punya_akun">Sudah punya akun?</string>
+    <string name="login_disini">Login disini</string>
+    <string name="daftar_btn">Daftar</string>
+    <string name="konfirmasi_password">Konfirmasi Password</string>
+    <string name="nama">Nama :</string>
+</resources>
